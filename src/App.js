@@ -1,4 +1,4 @@
-import {Route, Routes, HashRouter} from 'react-router-dom';
+import {Route, Routes, HashRouter, BrowserRouter} from 'react-router-dom';
 import './styles/App.css';
 
 import Navbar from './components/Navbar';
@@ -9,7 +9,7 @@ import MyWorks from './MyWorks';
 function App() {
   return (
     <div className="App">
-      <HashRouter>
+      <BrowserRouter>
         <Navbar/>
         <Routes>
           <Route path="/" element={<About/>}/>
@@ -18,7 +18,7 @@ function App() {
           <Route path="/my-works" element={<MyWorks/>}/>
           {/* <Route path="/*" element={<NotFound/>}/> */}
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
       <header className="App-header">
         header goes here
       </header>
