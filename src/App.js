@@ -15,6 +15,7 @@ function App() {
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/my-works" element={<MyWorks/>}/>
+        {/* <Route path="/*" element={<NotFound/>}/> */}
       </Routes>
       <header className="App-header">
         
