@@ -1,4 +1,4 @@
-import {Route, Routes} from 'react-router-dom';
+import {Route, Routes, HashRouter} from 'react-router-dom';
 import './styles/App.css';
 
 import Navbar from './components/Navbar';
@@ -9,16 +9,18 @@ import MyWorks from './MyWorks';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Routes>
-        <Route path="" element={<About/>}/>
-        <Route path="about" element={<About/>}/>
-        <Route path="contact" element={<Contact/>}/>
-        <Route path="my-works" element={<MyWorks/>}/>
-        {/* <Route path="/*" element={<NotFound/>}/> */}
-      </Routes>
+      <HashRouter>
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<About/>}/>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/my-works" element={<MyWorks/>}/>
+          {/* <Route path="/*" element={<NotFound/>}/> */}
+        </Routes>
+      </HashRouter>
       <header className="App-header">
-        
+        header goes here
       </header>
     </div>
   );
