@@ -62,7 +62,7 @@ nav .expander span{
     border-radius: 0.2rem;
 }
 
-@media screen and (max-width: 500px){
+@media only screen and (max-width: 768px){
 
     img[class~="logo"]{
         width: 6rem;
