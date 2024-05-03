@@ -1,0 +1,117 @@
+
+.typewriter-container {
+    display: inline-block;
+}
+
+.typewriter {
+    font-family: monospace;
+    width: 100%;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .35rem solid black; /* The typwriter cursor */
+    font-size: 4rem;
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .2em; /* Adjust as needed */
+    animation: 
+        typing 0.8s,
+        cursor .4s step-end infinite alternate;
+}
+  
+  /* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+}
+  
+  /* The typewriter cursor effect */
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
+p a{
+    text-decoration: underline;
+    color: black;
+}
+
+p a:hover{
+    text-decoration: none;
+    color: #ffe;
+    background-color: rgba(73, 68, 52, 0.856);
+    border-radius: 0.2rem;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    column-gap: 2rem;
+    grid-template-rows: auto auto auto auto;
+}
+
+.grid-text-left{
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+}
+
+.grid-image-right{
+    grid-column: 7 / 10;
+    grid-row: 1 / 4;
+}
+
+.grid-text-right{
+    grid-column: 6 / 10;
+    grid-row: 2 / 3;
+}
+
+.grid-image-left{
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+}
+
+img[class~="myself"]{
+    width: 100%;
+    object-fit: cover;
+    /* border-radius: 1.5rem; */
+    border: 1px solid black;
+}
+
+div{
+    line-height: 2.8rem;
+}
+
+.content-spacer{
+    height: 6rem;
+}
+
+@media screen and (max-width: 500px){
+    .typewriter{
+        font-size: 2.8rem;
+    }
+
+    div{
+        line-height: 2rem;
+        font-size: 1.1rem;
+    }
+
+    .grid-container{
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+    }
+
+    .grid-text-left{
+        grid-row: 2;
+        grid-column: auto;
+    }
+
+    .grid-image-right{
+        grid-row: 1;
+        grid-column: auto;
+    }
+
+    .grid-text-right{
+        grid-row: 2;
+        grid-column: auto;
+    }
+
+    .grid-image-left{
+        grid-row: 1;
+        grid-column: auto;
+    }
+}

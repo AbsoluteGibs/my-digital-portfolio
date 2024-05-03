@@ -7,11 +7,12 @@ function Navbar() {
     return (
         <nav>
             <NavLink to="/">
-                <img className='logo' src={process.env.PUBLIC_URL + "/logo.png"} alt="Logo"></img>
+                <img className='logo' src={process.env.PUBLIC_URL + "/logo.png"} alt="Logo"/>
             </NavLink>
             <div className='expander' onClick={() => {
                 setMenuExpand(!menuExpand)
             }}>
+                {/* hamburger menu icon */}
                 <span></span>
                 <span></span>
                 <span></span>

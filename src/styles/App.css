@@ -1,14 +1,16 @@
-body{
-  overflow: hidden;
+div{
+  font-size: 1.3rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .App {
   background-color: #fefefe;
-  height: 100%;
-  width: 100%;
 }
 
-/* for debugging */
-/* *{
-  border: solid 1px black;
-} */
+::-webkit-scrollbar{
+  display: none;
+}
+
+.content-div{
+  margin: 5rem;
+}
