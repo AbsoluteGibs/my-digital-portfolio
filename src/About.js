@@ -12,7 +12,7 @@ function About() {
             <div className='grid-text-left'>
               <p>
                 Hello visitor! Welcome to my portfolio. My name is Kelvin. I have taken a liking to programming in general and I like to challenge myself to build
-                programmes/apps/websites from time to time. During my free time, I also try out coding practices, networking with my peers and learning concepts
+                programmes, apps, websites from time to time. During my free time, I also try out coding practices, networking with my peers and learning concepts
                 that can potentially hone my existing works into more polished works. As I figure out my way in life, I will continuously learn new technologies
                 that are being thrown at me to upgrade myself and for my career. One particular technology that I am looking very closely at is blockchain. Find out
                 more about my works <NavLink to="/my-works">here</NavLink>.
