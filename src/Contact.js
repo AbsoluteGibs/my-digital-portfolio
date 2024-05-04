@@ -6,11 +6,11 @@ function Contact() {
   }
 
   const GithubRedirect = () => {
-    window.open("https://sg.linkedin.com/in/kelvin-chew-developer", "_blank")
+    window.open("https://github.com/AbsoluteGibs", "_blank")
   }
 
   const EmailRedirect = () => {
-    window.open("https://sg.linkedin.com/in/kelvin-chew-developer", "_blank")
+    window.location.href = "mailto:notsokelvio@gmail.com";
   }
 
   return (
