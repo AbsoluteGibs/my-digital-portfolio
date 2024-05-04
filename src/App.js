@@ -6,13 +6,12 @@ import About from './About';
 import Contact from './Contact';
 import MyWorks from './MyWorks';
 
-function App() {
+function App() { 
   return (
     <div className="App">
       <BrowserRouter>
         <Navbar/>
         <Routes>
-          {/* <Route path="/" element={<Navigate to="/about" replace />}/> */}
           <Route path="/about" element={<About/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/my-works" element={<MyWorks/>}/>

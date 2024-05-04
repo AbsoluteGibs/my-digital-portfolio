@@ -93,7 +93,6 @@ p a:hover{
 
 img[class~="myself"]{
     width: 100%;
-    object-fit: cover;
     border: 1px solid black;
 }
 
@@ -101,28 +100,59 @@ img[class~="myself"]{
     height: 6rem;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .typewriter{
-        font-size: 2.3rem;
-    }
-
-    p{
-        line-height: 1.8rem;
-        font-size: 0.8rem;
-    }
+button{
+    cursor: pointer;
+    font-size:xx-large;
+    border-radius: 0.5rem;
+    animation: fadeIn ease 1s;
+    animation-fill-mode: forwards;
 }
 
-@media only screen and (max-width: 768px){
-    .typewriter{
-        font-size: 2.3rem;
-    }
-
-    p{
-        line-height: 2rem;
-        font-size: 1.2rem;
-    }
+button[class~="linkedInR"]{
+    background-color: #3b77e6;
+    color: #fefefe;
 }
+
+button[class~="githubR"]{
+    background-color: rgb(37, 37, 37);
+    color: #fefefe;
+}
+
+.contact-badges{
+    display: flex;
+    align-items: center;
+}
+
+div[class~="contact-badges"] > img{
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+}
+
+/* img[class~="linkedInIcon"]{
+    width: 6rem;
+    height: 6rem;
+}
+
+img[class~="githubIcon"]{
+    width: 6rem;
+    height: 6rem;
+}
+
+img[class~="emailIcon"]{
+    width: 6rem;
+    height: 6rem;
+} */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
 
 @media only screen and (max-width: 1024px){
     .grid-container{
@@ -148,5 +178,38 @@ img[class~="myself"]{
     .grid-image-left{
         grid-row: 1;
         grid-column: auto;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .typewriter{
+        font-size: 2.3rem;
+    }
+
+    p{
+        line-height: 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .typewriter{
+        font-size: 2rem;
+    }
+
+    p{
+        line-height: 1.8rem;
+        font-size: 0.9rem;
+    }
+
+    button{
+        font-size: large;
+    }
+
+    div[class~="contact-badges"] > img{
+        width: 3rem;
+        height: 3rem;
+        padding: 1rem;
     }
 }

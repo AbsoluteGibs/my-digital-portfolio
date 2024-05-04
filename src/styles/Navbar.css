@@ -2,7 +2,6 @@
 img[class~="logo"]{
     width: 9rem;
     height: 9rem;
-    object-fit: cover;
     padding: 0.8rem !important;
     border-radius: 1.5rem;
 }

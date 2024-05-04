@@ -1,18 +1,39 @@
 import './styles/content.css';
 
 function Contact() {
-    return (
-      <div className="content-div">
-        <div className='typewriter-container'>
-          <h1 className="typewriter">Contact (Work in Progress...)</h1>
+  const LinkedInRedirect = () => {
+    window.open("https://sg.linkedin.com/in/kelvin-chew-developer", "_blank")
+  }
+
+  const GithubRedirect = () => {
+    window.open("https://sg.linkedin.com/in/kelvin-chew-developer", "_blank")
+  }
+
+  const EmailRedirect = () => {
+    window.open("https://sg.linkedin.com/in/kelvin-chew-developer", "_blank")
+  }
+
+  return (
+    <div className="content-div">
+      <div className='typewriter-container'>
+        <h1 className="typewriter">Reach out to me</h1>
+      </div>
+      <div>
+        <div className='contact-badges'>
+          <img className='linkedInIcon' src={process.env.PUBLIC_URL + "/linkedin-svgrepo-com.svg"} alt="linkedin icon"/>
+          <button title='test' className='linkedInR' onClick={LinkedInRedirect}>My LinkedIn</button>
         </div>
-        <div>
-          <p>
-            will add in: linkedin, github, email etc.
-          </p>
+        <div className='contact-badges'>
+          <img className='githubIcon' src={process.env.PUBLIC_URL + "/github-142-svgrepo-com.svg"} alt="github icon"/>
+          <button className='githubR' onClick={GithubRedirect}>Github Repos</button>
+        </div>
+        <div className='contact-badges'>
+          <img className='emailIcon' src={process.env.PUBLIC_URL + "/email-svgrepo-com.svg"} alt="email icon"/>
+          <button className='emailR' onClick={EmailRedirect}>Work E-mail</button>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
+}
   
-  export default Contact;
+export default Contact;
